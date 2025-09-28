@@ -1,0 +1,14 @@
+#! /usr/bin/bash
+echo "0: to exit"
+i=1
+while read p; do
+  echo "$i: $p"
+  let i++
+done < /home/ziesmow/.cache/ytlinks/youtube.description
+echo -n "jaki film obejrzeć ?: "
+read filmid 
+if [[ $filmid == 0 ]]; then
+  exit
+fi
+filmurl=$(sed -n "${filmid}p" /home/ziesmow/.cache/ytlinks/youtube.links)
+yt "$filmurl"

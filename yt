@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+yt-dlp -P ~/.cache/yt/ $1
+mpv ~/.cache/yt/
+rm ~/.cache/yt/* -f

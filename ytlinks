@@ -1,0 +1,7 @@
+#! /usr/bin/bash
+if [[ $1 == "" ]]; then
+  echo "brak argumentów końec z parsowaniem"
+  exit 1
+fi
+echo $1 >> /home/ziesmow/.cache/ytlinks/youtube.links 
+echo ${@:2} >> /home/ziesmow/.cache/ytlinks/youtube.description
