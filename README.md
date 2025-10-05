@@ -3,7 +3,7 @@ this is repository of bash scripts i use for yt beacouse my firefox have problem
 the dependencies are bash (no shit scherlock) and yt-dlp.  
 for proper working you need to run config.sh 
 ## yt
-this is for watching films, only argument it wants is url in '' or "" 
+this is for watching films, only argument it wants is url in '' or "", i know that mpv have this  option but hey why not it simple
 ## ytlink ecosystem 
 the ecosystem for watching films from the list. 
 if some film you like so much that you want to remeber it on the list.  

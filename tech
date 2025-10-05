@@ -1,0 +1,10 @@
+#! /usr/bin/bash
+
+
+video=$(yt-dlp --flat-playlist --print "%(title)s" "https://www.youtube.com/@techlinked/videos" --playlist-end 1)
+id=$(yt-dlp --flat-playlist --print "https://youtu.be/%(id)s" "https://www.youtube.com/@techlinked/videos" --playlist-end 1) 
+
+figlet -w 1000 "$video"
+thumb $id
+read nic
+yt $id

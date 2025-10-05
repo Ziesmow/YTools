@@ -1,0 +1,4 @@
+#! /bin/bash
+yt-dlp --quiet --skip-download --write-thumbnail --convert-thumbnails jpg -o "~/.cache/thumb" "$1"
+kitten icat ~/.cache/thumb.jpg
+rm ~/.cache/thumb.jpg
