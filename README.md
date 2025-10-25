@@ -1,7 +1,7 @@
 # tools for youtube
 this is repository of bash scripts i use for yt beacouse my firefox have problem sometimes.  
 the dependencies are bash (no shit scherlock) and yt-dlp.  
-for proper working you need to run config.sh 
+for proper working you need to chmod +x config.sh and run it 
 ## yt
 this is for watching films, only argument it wants is url in '' or "", i know that mpv have this  option but hey why not it simple
 ## ytlink ecosystem 

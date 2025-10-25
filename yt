@@ -1,4 +1,8 @@
 #! /usr/bin/bash
-yt-dlp -P ~/.cache/yt/ $1
-mpv ~/.cache/yt/
-rm ~/.cache/yt/* -f
+if [[ $1 == "" ]]; then
+  echo "no url ?"
+  exit 0
+fi
+yt-dlp -P ~/.cache/YTools/yt/ $1
+mpv ~/.cache/YTools/yt/
+rm ~/.cache/YTools/yt/* -f
